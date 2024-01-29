@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  farma:
+    image: 'mongo:latest'
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db/farma
+
+volumes:
+  mongodb_data_container:
